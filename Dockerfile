@@ -2,8 +2,7 @@ FROM golang:1.22
 LABEL authors="Bastian Venz"
 
 WORKDIR /app
-COPY go.mod go.sum ./
-COPY Lets.go Lets.go ./
+COPY go.mod Lets.go ./
 RUN go mod download
 RUN CGO_ENABLED=0 GOOS=linux go build -o /goTimeouting
 
