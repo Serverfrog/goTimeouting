@@ -8,4 +8,4 @@ RUN CGO_ENABLED=0 GOOS=linux go build -o /goTimeouting
 
 
 EXPOSE 8080
-CMD ["/docker-gs-ping"]
+CMD ["/goTimeouting"]
